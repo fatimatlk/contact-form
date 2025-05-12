@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="wrapper">
+            <div class="info">
+                <form id="contactForm">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </p>
+                    <p>
+                        <label>Last Name</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="text" name="email" id="email" required>
+                    </p>
 
+                    <h5>Query type</h5>
+                    <div class="query-option">
+                        <label>General Enquiry</label>
+                        <input type="radio" name="query" class="query">
+                    </div>
+                    <div class="query-option">
+                        <label>Support Request</label>
+                        <input type="radio" name="query" class="query">
+                    </div>
+
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" id="message"></textarea>
+                    </p>
+                    <div class="button">
+                        <p class="full">
+                            <button type="submit">Submit</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
